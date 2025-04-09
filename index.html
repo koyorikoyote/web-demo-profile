@@ -4,77 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyGameHub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://unpkg.com/lucide-static@latest/icons/search.svg"
-      rel="preload"
-      as="image"
-    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="min-h-screen bg-gradient-to-b from-[#1b2838] to-[#0f1923] text-white">
+  <body>
     <!-- Header -->
-    <header class="px-6 py-4 border-b border-gray-700 flex justify-between items-center bg-[#171a21]">
-      <h1 class="text-2xl font-bold">MyGameHub</h1>
-      <div class="relative w-80">
-        <input
-          type="text"
-          placeholder="Search games..."
-          class="w-full bg-[#2a475e] text-white px-4 py-2 rounded-md pl-10 focus:outline-none"
-        />
-        <svg class="absolute left-3 top-2.5 text-gray-400 w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
-          viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1011.25 18.5a7.5 7.5 0 005.4-2.35z" />
-        </svg>
+    <header class="header">
+      <h1 class="logo">MyGameHub</h1>
+      <div class="search-container">
+        <input type="text" placeholder="Search games..." class="search-input" />
+        <span class="search-icon">🔍</span>
       </div>
     </header>
 
-    <!-- Main Grid -->
-    <main class="px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Card 1 -->
-      <div class="bg-[#2a475e] rounded-2xl overflow-hidden shadow-xl transition transform hover:scale-105">
-        <img src="/images/cyber-odyssey.jpg" alt="Cyber Odyssey" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Cyber Odyssey</h2>
-          <p class="text-sm text-gray-300 mb-4">Explore a futuristic open-world full of secrets.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-lg font-bold text-green-400">$59.99</span>
-            <button
-              class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">Buy
-              Now</button>
-          </div>
-        </div>
-      </div>
+    <!-- Game Cards Grid -->
+    <main class="game-grid" id="game-grid"></main>
 
-      <!-- Card 2 -->
-      <div class="bg-[#2a475e] rounded-2xl overflow-hidden shadow-xl transition transform hover:scale-105">
-        <img src="/images/mystic-realms.jpg" alt="Mystic Realms" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Mystic Realms</h2>
-          <p class="text-sm text-gray-300 mb-4">Embark on a magical journey through enchanted lands.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-lg font-bold text-green-400">$39.99</span>
-            <button
-              class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">Buy
-              Now</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-[#2a475e] rounded-2xl overflow-hidden shadow-xl transition transform hover:scale-105">
-        <img src="/images/battle-forge.jpg" alt="Battle Forge" class="w-full h-48 object-cover" />
-        <div class="p-4">
-          <h2 class="text-xl font-semibold mb-2">Battle Forge</h2>
-          <p class="text-sm text-gray-300 mb-4">Forge your army and conquer realms in tactical warfare.</p>
-          <div class="flex justify-between items-center">
-            <span class="text-lg font-bold text-green-400">$49.99</span>
-            <button
-              class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">Buy
-              Now</button>
-          </div>
-        </div>
-      </div>
-    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
