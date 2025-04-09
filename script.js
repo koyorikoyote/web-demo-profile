@@ -2,19 +2,19 @@ const games = [
   {
     title: "Cyber Odyssey",
     description: "Explore a futuristic open-world full of secrets.",
-    image: "/images/cyber-odyssey.jpg",
+    image: "./cyber-odyssey.jpg",
     price: "$59.99"
   },
   {
     title: "Mystic Realms",
     description: "Embark on a magical journey through enchanted lands.",
-    image: "/images/mystic-realms.jpg",
+    image: "./mystic-realms.jpg",
     price: "$39.99"
   },
   {
     title: "Battle Forge",
     description: "Forge your army and conquer realms in tactical warfare.",
-    image: "/images/battle-forge.jpg",
+    image: "./battle-forge.jpg",
     price: "$49.99"
   }
 ];
